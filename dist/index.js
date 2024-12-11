@@ -292,7 +292,7 @@ console.log(getDayName(new Date())); //Sunday
 console.log(getDayName(new Date('2024-01-01'))); //Tuesday
 console.log(getDayName(new Date('2024-12-25'))); //Wednesday
 //IsPrime
-function isPime(num) {
+function isPrime(num) {
     if (num <= 1) {
         return false;
     }
@@ -303,12 +303,12 @@ function isPime(num) {
     }
     return true;
 }
-console.log(isPime(2)); //true
-console.log(isPime(3)); //true
-console.log(isPime(4)); //false
-console.log(isPime(5)); //true
-console.log(isPime(6)); //false
-console.log(isPime(7)); //true
-console.log(isPime(8)); //false
-console.log(isPime(9)); //false
-console.log(isPime(10)); //false
+console.log(isPrime(2)); //true
+console.log(isPrime(3)); //true
+console.log(isPrime(4)); //false
+console.log(isPrime(5)); //true
+console.log(isPrime(6)); //false
+console.log(isPrime(7)); //true
+console.log(isPrime(8)); //false
+console.log(isPrime(9)); //false
+console.log(isPrime(10)); //false
