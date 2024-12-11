@@ -187,3 +187,26 @@ console.log(isVowel('O'));
 console.log(isVowel('U'));
 
 //reverse string
+function reverseString(str: string): string {
+  return str.split('').reverse().join('');
+}
+
+console.log(reverseString('hello'));
+console.log(reverseString('world'));
+console.log(reverseString('javascript'));
+console.log(reverseString('typescript'));
+console.log(reverseString('nodejs'));
+
+function calculateFactorial(num: number): number {
+  if (num === 0 || num === 1) {
+    return 1;
+  } else if (num < 0) {
+    throw new Error('Number must be positive');
+  } else {
+    return num * calculateFactorial(num - 1);
+  }
+}
+
+console.log(calculateFactorial(5)); //120
+console.log(calculateFactorial(0)); //0
+console.log(calculateFactorial(-1)); //0
