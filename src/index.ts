@@ -264,3 +264,11 @@ function isPalindrome(str: string): boolean {
 console.log(isPalindrome('racecar')); //true
 console.log(isPalindrome('hello')); //false
 console.log(isPalindrome('level')); //true
+// count Occurrences
+function countOccurrences(numbers: number[], target: number): number {
+  return numbers.filter((number) => number === target).length;
+}
+
+console.log(countOccurrences([1, 2, 3, 4, 5], 3)); //1
+console.log(countOccurrences([1, 2, 3, 4, 5], 6)); //0
+console.log(countOccurrences([1, 2, 3, 4, 5, 3], 3)); //2
