@@ -268,3 +268,10 @@ function convertCelsiusToFahrenheit(celsius) {
 console.log(convertCelsiusToFahrenheit(0)); //32
 console.log(convertCelsiusToFahrenheit(100)); //212
 console.log(convertCelsiusToFahrenheit(-40)); //-40
+//ConvertFahrenheitToCelsius
+function convertFahrenheitToCelsius(fahrenheit) {
+    return ((fahrenheit - 32) * 5) / 9;
+}
+console.log(convertFahrenheitToCelsius(32)); //0
+console.log(convertFahrenheitToCelsius(212)); //100
+console.log(convertFahrenheitToCelsius(-40)); //-40
