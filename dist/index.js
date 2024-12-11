@@ -206,3 +206,10 @@ function findMax(numbers) {
 console.log(findMax([1, 2, 3, 4, 5])); //5
 console.log(findMax([10, 20, 30, 40, 50])); //50
 console.log(findMax([-1, -2, -3, -4, -5])); //-1
+//find min
+function findMin(numbers) {
+    return Math.min(...numbers);
+}
+console.log(findMin([1, 2, 3, 4, 5])); //1
+console.log(findMin([10, 20, 30, 40, 50])); //10
+console.log(findMin([-1, -2, -3, -4, -5])); //-5
