@@ -168,7 +168,7 @@ function calculateFactorial(num) {
         return 1;
     }
     else if (num < 0) {
-        throw new Error('Number must be positive');
+        return 0;
     }
     else {
         return num * calculateFactorial(num - 1);
@@ -188,3 +188,21 @@ function CalculateSum(numbers) {
 console.log(CalculateSum([1, 2, 3, 4, 5])); //15
 console.log(CalculateSum([10, 20, 30, 40, 50])); //150
 console.log(CalculateSum([-1, -2, -3, -4, -5])); //-15
+//calculate average
+function calculateAverage(numbers) {
+    let sum = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+    }
+    return sum / numbers.length;
+}
+console.log(calculateAverage([1, 2, 3, 4, 5])); //3
+console.log(calculateAverage([10, 20, 30, 40, 50])); //30
+console.log(calculateAverage([-1, -2, -3, -4, -5])); //-3
+//find max
+function findMax(numbers) {
+    return Math.max(...numbers);
+}
+console.log(findMax([1, 2, 3, 4, 5])); //5
+console.log(findMax([10, 20, 30, 40, 50])); //50
+console.log(findMax([-1, -2, -3, -4, -5])); //-1

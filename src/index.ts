@@ -205,7 +205,7 @@ function calculateFactorial(num: number): number {
   if (num === 0 || num === 1) {
     return 1;
   } else if (num < 0) {
-    throw new Error('Number must be positive');
+    return 0;
   } else {
     return num * calculateFactorial(num - 1);
   }
@@ -240,3 +240,12 @@ function calculateAverage(numbers: number[]): number {
 console.log(calculateAverage([1, 2, 3, 4, 5])); //3
 console.log(calculateAverage([10, 20, 30, 40, 50])); //30
 console.log(calculateAverage([-1, -2, -3, -4, -5])); //-3
+
+//find max
+function findMax(numbers: number[]): number {
+  return Math.max(...numbers);
+}
+
+console.log(findMax([1, 2, 3, 4, 5])); //5
+console.log(findMax([10, 20, 30, 40, 50])); //50
+console.log(findMax([-1, -2, -3, -4, -5])); //-1
