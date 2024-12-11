@@ -272,3 +272,16 @@ function countOccurrences(numbers: number[], target: number): number {
 console.log(countOccurrences([1, 2, 3, 4, 5], 3)); //1
 console.log(countOccurrences([1, 2, 3, 4, 5], 6)); //0
 console.log(countOccurrences([1, 2, 3, 4, 5, 3], 3)); //2
+
+// RemoveDuplicates
+function removeDuplicates(numbers: number[]): number[] {
+  return [...new Set(numbers)];
+}
+
+console.log(removeDuplicates([1, 2, 3, 4, 5])); //[1, 2, 3, 4, 5]
+console.log(removeDuplicates([1, 2, 3, 4, 5, 3])); //[1, 2, 3, 4, 5]
+console.log(removeDuplicates([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])); //[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+console.log(removeDuplicates([1, 1, 2, 2, 3, 3, 4, 4, 5, 5])); //[1, 2, 3, 4, 5]
+console.log(removeDuplicates([1, 1, 1, 1, 1, 1, 1, 1, 1, 1])); //[1]
+console.log(removeDuplicates([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10])); //[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5, 6, 6, 7, 8, 8, 9, 10, 10])); //[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]

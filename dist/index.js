@@ -213,3 +213,28 @@ function findMin(numbers) {
 console.log(findMin([1, 2, 3, 4, 5])); //1
 console.log(findMin([10, 20, 30, 40, 50])); //10
 console.log(findMin([-1, -2, -3, -4, -5])); //-5
+// is palindrome
+function isPalindrome(str) {
+    return str === str.split('').reverse().join('');
+}
+console.log(isPalindrome('racecar')); //true
+console.log(isPalindrome('hello')); //false
+console.log(isPalindrome('level')); //true
+// count Occurrences
+function countOccurrences(numbers, target) {
+    return numbers.filter((number) => number === target).length;
+}
+console.log(countOccurrences([1, 2, 3, 4, 5], 3)); //1
+console.log(countOccurrences([1, 2, 3, 4, 5], 6)); //0
+console.log(countOccurrences([1, 2, 3, 4, 5, 3], 3)); //2
+// RemoveDuplicates
+function removeDuplicates(numbers) {
+    return [...new Set(numbers)];
+}
+console.log(removeDuplicates([1, 2, 3, 4, 5])); //[1, 2, 3, 4, 5]
+console.log(removeDuplicates([1, 2, 3, 4, 5, 3])); //[1, 2, 3, 4, 5]
+console.log(removeDuplicates([1, 2, 3, 4, 5, 6, 7, 8, 9, 10])); //[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+console.log(removeDuplicates([1, 1, 2, 2, 3, 3, 4, 4, 5, 5])); //[1, 2, 3, 4, 5]
+console.log(removeDuplicates([1, 1, 1, 1, 1, 1, 1, 1, 1, 1])); //[1]
+console.log(removeDuplicates([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 10])); //[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+console.log(removeDuplicates([1, 2, 2, 3, 4, 4, 5, 6, 6, 7, 8, 8, 9, 10, 10])); //[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
