@@ -310,3 +310,12 @@ console.log(isLeapYear(2024)); //true
 console.log(isLeapYear(2023)); //false
 console.log(isLeapYear(2000)); //true
 console.log(isLeapYear(1900)); //false
+
+//ConvertCelsiusToFahrenheit
+function convertCelsiusToFahrenheit(celsius: number): number {
+  return (celsius * 9) / 5 + 32;
+}
+
+console.log(convertCelsiusToFahrenheit(0)); //32
+console.log(convertCelsiusToFahrenheit(100)); //212
+console.log(convertCelsiusToFahrenheit(-40)); //-40
