@@ -296,3 +296,17 @@ function fibonacciSequence(n: number): number[] {
 
 console.log(fibonacciSequence(10)); //[0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
 console.log(fibonacciSequence(20)); //[0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233, 377, 610, 987, 1597, 2584, 4181]
+
+//IsLeapYear
+function isLeapYear(year: number): boolean {
+  if (year % 4 === 0) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+console.log(isLeapYear(2024)); //true
+console.log(isLeapYear(2023)); //false
+console.log(isLeapYear(2000)); //true
+console.log(isLeapYear(1900)); //false
