@@ -275,3 +275,19 @@ function convertFahrenheitToCelsius(fahrenheit) {
 console.log(convertFahrenheitToCelsius(32)); //0
 console.log(convertFahrenheitToCelsius(212)); //100
 console.log(convertFahrenheitToCelsius(-40)); //-40
+//getDayName
+function getDayName(date) {
+    const days = [
+        'Sunday',
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday',
+    ];
+    return days[date.getDay()];
+}
+console.log(getDayName(new Date())); //Sunday
+console.log(getDayName(new Date('2024-01-01'))); //Tuesday
+console.log(getDayName(new Date('2024-12-25'))); //Wednesday
