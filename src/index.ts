@@ -227,3 +227,16 @@ function CalculateSum(numbers: number[]) {
 console.log(CalculateSum([1, 2, 3, 4, 5])); //15
 console.log(CalculateSum([10, 20, 30, 40, 50])); //150
 console.log(CalculateSum([-1, -2, -3, -4, -5])); //-15
+
+//calculate average
+function calculateAverage(numbers: number[]): number {
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) {
+    sum += numbers[i];
+  }
+  return sum / numbers.length;
+}
+
+console.log(calculateAverage([1, 2, 3, 4, 5])); //3
+console.log(calculateAverage([10, 20, 30, 40, 50])); //30
+console.log(calculateAverage([-1, -2, -3, -4, -5])); //-3
