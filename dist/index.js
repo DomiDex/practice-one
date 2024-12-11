@@ -103,12 +103,14 @@ function handleHttpStatusCode(status) {
     }
 }
 handleHttpStatusCode(HttpStatusCode.NOT_FOUND);
+//is even
 function isEven(num) {
     return num % 2 === 0;
 }
 console.log(isEven(4));
 console.log(isEven(5));
 console.log(isEven(6));
+//is positive
 function isPositive(num) {
     if (num > 0) {
         return true;
@@ -120,6 +122,7 @@ function isPositive(num) {
 console.log(isPositive(1));
 console.log(isPositive(0));
 console.log(isPositive(-1));
+//max of three
 function maxOfThree(num1, num2, num3) {
     if (num1 > num2 && num1 > num3) {
         return num1;
@@ -134,6 +137,7 @@ function maxOfThree(num1, num2, num3) {
 console.log(maxOfThree(1, 2, 3));
 console.log(maxOfThree(4, 5, 6));
 console.log(maxOfThree(7, 8, 9));
+//is vowel
 function isVowel(char) {
     return ['a', 'e', 'i', 'o', 'u'].includes(char.toLowerCase());
 }
@@ -158,6 +162,7 @@ console.log(reverseString('world'));
 console.log(reverseString('javascript'));
 console.log(reverseString('typescript'));
 console.log(reverseString('nodejs'));
+//calculate factorial
 function calculateFactorial(num) {
     if (num === 0 || num === 1) {
         return 1;
@@ -172,3 +177,14 @@ function calculateFactorial(num) {
 console.log(calculateFactorial(5)); //120
 console.log(calculateFactorial(0)); //0
 console.log(calculateFactorial(-1)); //0
+//CalculateSum
+function CalculateSum(numbers) {
+    let sum = 0;
+    for (let i = 0; i < numbers.length; i++) {
+        sum += numbers[i];
+    }
+    return sum;
+}
+console.log(CalculateSum([1, 2, 3, 4, 5])); //15
+console.log(CalculateSum([10, 20, 30, 40, 50])); //150
+console.log(CalculateSum([-1, -2, -3, -4, -5])); //-15
