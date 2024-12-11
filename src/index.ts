@@ -256,3 +256,11 @@ function findMin(numbers: number[]): number {
 console.log(findMin([1, 2, 3, 4, 5])); //1
 console.log(findMin([10, 20, 30, 40, 50])); //10
 console.log(findMin([-1, -2, -3, -4, -5])); //-5
+// is palindrome
+function isPalindrome(str: string): boolean {
+  return str === str.split('').reverse().join('');
+}
+
+console.log(isPalindrome('racecar')); //true
+console.log(isPalindrome('hello')); //false
+console.log(isPalindrome('level')); //true
